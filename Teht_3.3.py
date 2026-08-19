@@ -20,14 +20,14 @@ while True:
         print("Virhe.")
     # try / except löytyi googlaamalla, en ole moiseen aiemmin törmännyt.
 
-if sukupuoli.lower() == "mies" or "m":
+if sukupuoli.lower() == "mies" or sukupuoli.lower() == "m":
     if testi >= 134 and testi <= 195:
         print("Hemoglobiini arvosi on normaali.")
     elif testi < 134:
         print("Hemoglobiini arvosi on alhainen.")
     elif testi > 195:
         print("Hemoglobiini arvosi on korkea.")
-elif sukupuoli.lower() == "nainen" or "n":
+elif sukupuoli.lower() == "nainen" or sukupuoli.lower() == "n":
     if testi >= 117 and testi <= 175:
         print("Hemoglobiini arvosi on normaali.")
     elif testi < 117:
