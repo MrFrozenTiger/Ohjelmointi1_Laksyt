@@ -5,12 +5,12 @@
 
 import random
 
-koodi11 = random.randint(0,9)
-koodi12 = random.randint(0,9)
-koodi13 = random.randint(0,9)
-koodi21 = random.randint(1,6)
-koodi22 = random.randint(1,6)
-koodi23 = random.randint(1,6)
-koodi24 = random.randint(1,6)
+koodi1_1 = random.randint(0,9)
+koodi1_2 = random.randint(0,9)
+koodi1_3 = random.randint(0,9)
+koodi2_1 = random.randint(1,6)
+koodi2_2 = random.randint(1,6)
+koodi2_3 = random.randint(1,6)
+koodi2_4 = random.randint(1,6)
 print(f"{koodi11}{koodi12}{koodi13}")
 print(f"{koodi21}{koodi22}{koodi23}{koodi24}")
