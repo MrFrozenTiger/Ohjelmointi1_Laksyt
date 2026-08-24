@@ -19,4 +19,3 @@ elif vuosiluku % 4 == 0:
     print(f"Vuosi {vuosiluku} on karkausvuosi.")
 else:
     print(f"Vuosi {vuosiluku} ei ole karkausvuosi.")
-    
