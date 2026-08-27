@@ -5,7 +5,7 @@
 import random
 
 summa = 0
-#luvut = []
+#luvut = []#2
 while True:
     noppia = input("Anna noppien määrä: ")
     try:
@@ -15,10 +15,10 @@ while True:
         print("Virhe.")
 
 for n in range(noppia):
-#    luku = random.randint(1, 6)
-#    luvut.append(luku)
-    summa += random.randint(1, 6)
-#    summa += luku
-print(summa)
-#luvut = sorted(luvut)
-#print(luvut)
+#    luku = random.randint(1, 6)#2
+#    luvut.append(luku)#2
+    summa += random.randint(1, 6)#1
+#    summa += luku#2
+print(summa)#1
+#luvut = sorted(luvut)#2.2
+#print(luvut)#2
