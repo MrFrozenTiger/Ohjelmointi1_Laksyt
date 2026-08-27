@@ -19,6 +19,6 @@ for n in range(noppia):
 #    luvut.append(luku)#2
     summa += random.randint(1, 6)#1
 #    summa += luku#2
-print(summa)#1
+print(f"Silmälukujen summa: {summa}")#1
 #luvut = sorted(luvut)#2.2
 #print(luvut)#2
