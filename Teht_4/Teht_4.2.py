@@ -3,6 +3,6 @@
 # 1 tuuma = 2,54 cm
 
 syote = float(input("Anna tuumat: "))
-while syote > 0:
+while syote >= 0:
     print(f"{syote*2.54} cm")
     syote = float(input("Anna tuumat: "))
