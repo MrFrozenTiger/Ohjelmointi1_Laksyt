@@ -16,7 +16,7 @@ while True:
     try:
         noppa = int(noppa)
         break
-    except:
+    except ValueError:
         print("Virhe.")
 while luku != noppa:
     luku = arpa(1, noppa)
