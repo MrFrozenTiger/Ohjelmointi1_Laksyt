@@ -9,5 +9,6 @@ kaupungit = []
 for x in range(5):
     kaupunki = input("Syötä kaupunki: ")
     kaupungit.append(kaupunki)
+#    kaupungit.append(input("Syötä kaupunki: "))
 for y in kaupungit:
     print(y)
