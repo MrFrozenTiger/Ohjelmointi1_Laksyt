@@ -8,6 +8,7 @@
 def gallonat_litroiksi(gallonat):
     litrat = gallonat * 3.785
     return litrat
+    #return gallonat * 3.785
 
 gallonat = float(input("Syötä gallonat (negatiivinen lopettaa): "))
 while gallonat >= 0:
