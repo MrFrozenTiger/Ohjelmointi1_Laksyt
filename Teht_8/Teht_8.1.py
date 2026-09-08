@@ -14,7 +14,6 @@ yhteys = mysql.connector.connect(
          autocommit=True
          )
 
-
 koodi = input("Syötä lentoaseman ICAO-koodi: ").upper()# Helsinki-Vantaan ICAO on EFHK
 sql = f"select name, municipality from airport where ident = '{koodi}';"
 kursori = yhteys.cursor()
