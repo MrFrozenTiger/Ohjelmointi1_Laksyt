@@ -14,7 +14,6 @@ yhteys = mysql.connector.connect(
          autocommit=True
          )
 
-
 koodi = input("Syötä maa koodi: ").upper()
 sql = f"select type, count(*) from airport where iso_country = '{koodi}' group by type;"
 kursori = yhteys.cursor()
