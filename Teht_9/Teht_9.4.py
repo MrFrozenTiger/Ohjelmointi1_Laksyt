@@ -53,6 +53,11 @@ while edistys < reitti:
         if auto.matka > edistys:
             edistys = auto.matka
 
+voittaja = kilpailijat[0]
+
+for auto in kilpailijat:
+    if auto.matka > voittaja.matka:
+        voittaja = auto
 
 print(f"Kilpailun kesto: {kesto}h")
 
@@ -60,8 +65,14 @@ print(f"{'Rekisteri':<12}{'Huippunopeus':<15}{'Nykynopeus':<15}{'Matka'}")
 print("-" * 52)
 
 for auto in kilpailijat:
-    print(f"{auto.rekkari:<12}"
-          f"{auto.huippu_nopeus:>8.1f} km/h"
-          f"{auto.nyky_nopeus:>9.1f} km/h"
+    if auto == voittaja:
+        merkinta = " *"
+    else:
+        merkinta = " "
+
+    print(f"{auto.rekkari:<6}"
+          f"{merkinta:<4}"
+          f"{auto.huippu_nopeus:>7.1f} km/h"
+          f"{auto.nyky_nopeus:>10.1f} km/h"
           f"{auto.matka:>12.1f} km")
 
