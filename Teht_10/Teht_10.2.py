@@ -65,6 +65,8 @@ talo = Talo(3, 7,)
 loop_1 = True
 while loop_1:
     loop_2 = True
+
+    # Valitsee hissin.
     while True:
         valitse_hissi = input("Valitse hissi (1-3): ")
         try:
@@ -75,6 +77,8 @@ while loop_1:
                 print(f"Virhe! Hissin pitää olla välillä 1-{len(talo.hissit)}.")
         except ValueError:
             print("Virhe! Syötteen pitää olla numero.")
+
+    # Valitsee kerroksen.
     while True:
         valitse_kerros = input("Valitse kerros (1-7): ")
         try:
@@ -87,8 +91,9 @@ while loop_1:
     print(f"Valitsit hissin {valitse_hissi}.")
     talo.aja_hissia(valittu_hissi, valitse_kerros)
 
+    # Jatketaanko hissittelyä?
     while loop_2:
-        jatketaanko = input("Jatketaanko hissittelyä (k/e)?: ").lower()
+        jatketaanko = input("Jatketaanko hissillä ajelua (k/e)?: ").lower()
         if jatketaanko in ["k","kyllä", "y", "yes"]:
             loop_2 = False
             continue
